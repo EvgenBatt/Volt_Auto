@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll(".services-img-button");
+const buttons = document.querySelectorAll(".services-img-content");
 const textBlocks = document.querySelectorAll(".services-visible-content");
 
 const buttonArray = Array.from(buttons);

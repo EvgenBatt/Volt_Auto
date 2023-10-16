@@ -503,6 +503,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 222px;
+  cursor: pointer;
 }
 
 .services-img-content2 {
