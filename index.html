@@ -9,13 +9,13 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Marck+Script&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="header-top">
         <div class="container-header-top">
           <div class="header-top-flex">
@@ -119,7 +119,7 @@
     <!-- Section HERO -->
     <section class="hero">
       <div class="hero-title">
-        <h1>сервіс улуктромобілів <span>сервіс майбутнього</span></h1>
+        <h1>сервіс електромобілів <span>сервіс майбутнього</span></h1>
       </div>
       <a class="button-black" href="#">
         Запис на сервіс
@@ -195,20 +195,31 @@
       <div class="container">
         <h2>Марки</h2>
         <p>Обслуговуємо електромобілі більшості виробників</p>
-        <div class="brands-swiper">
+
+        <div class="brands-slider">
           <div class="swiper-wrapper">
-            <div class="brands-slide"><img src="./assets/img/brand-baic.svg" alt="baic" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-byd.svg" alt="byd" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-circle.svg" alt="circle" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-dash.svg" alt="dash" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-geely.svg" alt="geely" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-toyota.svg" alt="toyota" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-wolksvagen.svg" alt="wolksvagen" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-byd.svg" alt="byd" /></div>
-            <div class="brands-slide"><img src="./assets/img/brand-geely.svg" alt="geely" /></div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-baic.svg" alt="baic" /></div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-byd.svg" alt="byd" /></div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-circle.svg" alt="circle" /></div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-dash.svg" alt="dash" /></div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-geely.svg" alt="geely" /></div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-toyota.svg" alt="toyota" /></div>
+            <div class="brands-slide swiper-slide">
+              <img src="./assets/img/brand-wolksvagen.svg" alt="wolksvagen" />
+            </div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-byd.svg" alt="byd" /></div>
+            <div class="brands-slide swiper-slide"><img src="./assets/img/brand-geely.svg" alt="geely" /></div>
           </div>
-          <div class="brands-swiper-button-next"></div>
-          <div class="brands-swiper-button-prev"></div>
+          <div class="brands-slider-button-next">
+            <svg width="4" height="7">
+              <use href="./assets/img/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="brands-slider-button-prev">
+            <svg width="4" height="7">
+              <use href="./assets/img/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
@@ -328,10 +339,282 @@
       </div>
     </section>
 
-    <footer></footer>
+    <!-- Section BOOKING -->
+    <section class="booking">
+      <h2>Запис на сервіс</h2>
+      <form action="#" method="post" autocomplete="off">
+        <div class="booking-form-container">
+          <div class="booking-form-field">
+            <label for="name">Імʼя</label>
+            <input type="text" id="name" name="name" placeholder="Ваше імʼя" required />
+          </div>
+
+          <div class="booking-form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" id="tel" name="tel" placeholder="+380" required />
+          </div>
+
+          <div class="booking-form-field">
+            <label for="message">Оберіть сервісний центр</label>
+            <select name="city" id="city">
+              <option value="Київ" selected>Київ</option>
+              <option value="Дніпро">Дніпро</option>
+              <option value="Одеса">Одеса</option>
+              <option value="Львів">Львів</option>
+            </select>
+            <div class="booking-form-arrow">
+              <svg width="11" height="6">
+                <use href="./assets/img/icons.svg#icon-form-arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+
+          <button type="submit" class="booking-form-button">
+            Записатися
+            <svg width="12px" height="12px">
+              <use href="./assets/img/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Section GALLERY -->
+    <section class="gallery">
+      <h2>Галерея</h2>
+      <div class="gallery-slider">
+        <div class="swiper-wrapper">
+          <div class="gallery-slide swiper-slide"><img src="./assets/img/gallery-slider1.jpg" alt="slider1" /></div>
+          <div class="gallery-slide swiper-slide"><img src="./assets/img/gallery-slider2.jpg" alt="slider2" /></div>
+          <div class="gallery-slide swiper-slide"><img src="./assets/img/gallery-slider3.jpg" alt="slider3" /></div>
+          <div class="gallery-slide swiper-slide"><img src="./assets/img/gallery-slider1.jpg" alt="slider1" /></div>
+          <div class="gallery-slide swiper-slide"><img src="./assets/img/gallery-slider2.jpg" alt="slider2" /></div>
+          <div class="gallery-slide swiper-slide"><img src="./assets/img/gallery-slider3.jpg" alt="slider3" /></div>
+          <div class="gallery-slide swiper-slide"><img src="./assets/img/gallery-slider1.jpg" alt="slider1" /></div>
+        </div>
+        <div class="gallery-slider-button-next">
+          <svg width="4" height="7">
+            <use href="./assets/img/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+        <div class="gallery-slider-button-prev">
+          <svg width="4" height="7">
+            <use href="./assets/img/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section PROPOSE -->
+    <section class="propose">
+      <div class="propose-youtube">
+        <div class="container">
+          <h2>Затятий електромобіліст?</h2>
+          <p>На нашому <b>Youtube</b> каналі контент, що ви оцінете!</p>
+        </div>
+        <div class="propose-youtube-iframe">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2ZPHj_NU9RY?si=avyNL-9m5I_zD-1G"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="propose-social">
+        <div class="container">
+          <ul class="propose-social-list">
+            <li>
+              <a href="#">
+                <svg width="19" height="13">
+                  <use href="./assets/img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="19" height="19">
+                  <use href="./assets/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="19" height="19">
+                  <use href="./assets/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="18" height="17">
+                  <use href="./assets/img/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="21">
+                  <use href="./assets/img/icons.svg#icon-viber"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="propose-selection-car">
+        <div class="container">
+          <h2>Все ще без електромобіля?</h2>
+          <p>На <b>VOLTauto.ua</b> оберіть ідеальний!</p>
+        </div>
+        <div class="propose-selection-car-img">
+          <img src="./assets/img/propose-selection-car-img.jpg" alt="car" width="390" />
+        </div>
+        <a class="button-black" href="#">
+          Перейти на сайт
+          <svg width="12px" height="12px">
+            <use href="./assets/img/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section NEWS -->
+    <section class="news">
+      <h2>Новини та акції</h2>
+      <div class="news-slider">
+        <div class="swiper-wrapper">
+          <div class="news-slide swiper-slide">
+            <img src="./assets/img/news-slider1.jpg" alt="slider1" />
+            <div class="news-slide-content">
+              <p>-20% на запчастини BYD</p>
+            </div>
+          </div>
+
+          <div class="news-slide swiper-slide">
+            <img src="./assets/img/news-slider2.jpg" alt="slider2" />
+            <div class="news-slide-content">
+              <p>Місяць ID4. Знижка на обслуговування 10%</p>
+            </div>
+          </div>
+
+          <div class="news-slide swiper-slide">
+            <img src="./assets/img/news-slider3.jpg" alt="slider3" />
+            <div class="news-slide-content">
+              <p>Безкоштовний переклад інтерфейсу TOYOTA bz4x</p>
+            </div>
+          </div>
+        </div>
+        <div class="news-slider-button-next">
+          <svg width="4" height="7">
+            <use href="./assets/img/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+        <div class="news-slider-button-prev">
+          <svg width="4" height="7">
+            <use href="./assets/img/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-logo-time-work-wrap">
+            <div class="footer-logo">
+              <img src="./assets/img/logo.svg" alt="VOLT Auto" width="75" />
+              <p>service</p>
+            </div>
+            <div class="footer-time-work">
+              <div class="footer-time-work-item">
+                <p>Пн-Пт:</p>
+                <p>10:00 - 19:00</p>
+              </div>
+              <div class="footer-time-work-item">
+                <p>Пн-Пт:</p>
+                <p>10:00 - 19:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-contacts">
+            <a class="footer-contacts-tel" href="tel:+380689210878">+38068 921 0878</a>
+            <a class="footer-contacts-button" href="#">
+              Замовити дзвінок
+              <svg width="12px" height="12px">
+                <use href="./assets/img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-social">
+            <p>Ми у соцмережах</p>
+            <div class="footer-social-flex">
+            
+              <ul class="footer-social-list1">
+                <li class="footer-youtube">
+                  <a href="#">
+                    <svg width="11" height="7">
+                      <use href="./assets/img/icons.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-facebook">
+                    <a href="#">
+                      <svg width="12" height="12">
+                        <use href="./assets/img/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer-instagram">
+                    <a href="#">
+                      <svg width="12" height="12">
+                        <use href="./assets/img/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+              </ul>
+
+              <ul class="footer-social-list2">
+                <li class="footer-viber">
+                    <a href="#">
+                      <svg width="17" height="18">
+                        <use href="./assets/img/icons.svg#icon-viber"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li  class="footer-telegram">
+                    <a href="#">
+                      <svg width="20" height="17">
+                        <use href="./assets/img/icons.svg#icon-telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-subscribe">
+            <div class="footer-subscribe-text">
+                <p>Підпишись на наші канали!</p>
+                <p>Отримуй найкращі пропозиції першим!</p>
+            </div>
+            <div class="footer-subscribe-icon">
+                <svg width="19px" height="19px">
+                    <use href="./assets/img/icons.svg#icon-footer-arrow"></use>
+                  </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/mobile-menu.js"></script>
     <script src="./assets/js/open-tab-content.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./assets/js/swiper-slider.js"></script>
+    <script src="./assets/js/swiper-sliders.js"></script>
   </body>
 </html>
