@@ -53,7 +53,7 @@ const gallerySlider = new Swiper(".gallery-slider", {
       spaceBetween: 15,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 40,
     },
     1024: {
@@ -88,8 +88,8 @@ const newsSlider = new Swiper(".news-slider", {
       spaceBetween: 15,
     },
     768: {
-      slidesPerView: 1,
-      spaceBetween: 40,
+      slidesPerView: 2,
+      spaceBetween: 25,
     },
     1024: {
       slidesPerView: 1,
