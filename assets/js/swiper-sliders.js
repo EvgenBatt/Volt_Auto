@@ -18,7 +18,7 @@ const brandSlider = new Swiper(".brands-slider", {
       spaceBetween: 15,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 4,
       spaceBetween: 40,
     },
     1024: {

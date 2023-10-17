@@ -46,6 +46,13 @@
   fill: #1a9d48;
 }
 
+.zoomed {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s;
+  cursor: zoom-out;
+}
+
 /* HEADER Styles */
 
 /* Header Top Styles */
@@ -548,7 +555,7 @@
 
 .services-img-wrapper {
   position: relative;
-  max-width: 390px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -674,6 +681,9 @@
   line-height: 1.54; /* 20/13 */
   color: rgba(0, 0, 0, 0.75);
   margin-bottom: 11px;
+}
+
+.spares-img {
 }
 
 /* Section BOOKING */
@@ -824,13 +834,14 @@
   justify-content: center;
   width: auto;
   height: auto;
+  max-width: 635px;
+  max-height: 440px;
 }
 
 .gallery-slide img {
   max-width: 100%;
   width: auto;
   height: auto;
-  max-height: 270px;
 }
 
 .gallery-slider-button-next,
@@ -969,7 +980,6 @@
 }
 
 .propose-selection-car-img {
-  max-width: 390px;
   margin: 0 auto;
   margin-bottom: 13px;
 }
@@ -1016,7 +1026,9 @@
   width: auto;
   height: auto;
   position: relative;
-  max-width: 440px;
+  max-width: 635px;
+  max-height: 440px;
+  cursor: pointer;
 }
 
 .news-slide img {
