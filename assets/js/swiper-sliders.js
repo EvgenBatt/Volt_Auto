@@ -22,12 +22,16 @@ const brandSlider = new Swiper(".brands-slider", {
       spaceBetween: 25,
     },
     1024: {
-      slidesPerView: 1,
-      spaceBetween: 50,
+      slidesPerView: 5,
+      spaceBetween: 15,
     },
     1440: {
-      slidesPerView: 1,
-      spaceBetween: 50,
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+    1920: {
+      slidesPerView: 7,
+      spaceBetween: 45,
     },
   },
 });
@@ -36,7 +40,6 @@ const brandSlider = new Swiper(".brands-slider", {
 const gallerySlider = new Swiper(".gallery-slider", {
   direction: "horizontal",
   loop: true,
-  cssMode: true,
   speed: 500,
   centeredSlides: true,
 
@@ -53,14 +56,18 @@ const gallerySlider = new Swiper(".gallery-slider", {
       spaceBetween: 15,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 25,
     },
     1024: {
       slidesPerView: 1,
-      spaceBetween: 50,
+      spaceBetween: 15,
     },
     1440: {
+      slidesPerView: 1,
+      spaceBetween: 45,
+    },
+    1920: {
       slidesPerView: 1,
       spaceBetween: 50,
     },
@@ -71,7 +78,6 @@ const gallerySlider = new Swiper(".gallery-slider", {
 const newsSlider = new Swiper(".news-slider", {
   direction: "horizontal",
   loop: true,
-  cssMode: true,
   speed: 500,
   centeredSlides: true,
 
@@ -88,14 +94,18 @@ const newsSlider = new Swiper(".news-slider", {
       spaceBetween: 15,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 25,
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 1,
-      spaceBetween: 50,
+      spaceBetween: 15,
     },
     1440: {
+      slidesPerView: 1,
+      spaceBetween: 45,
+    },
+    1920: {
       slidesPerView: 1,
       spaceBetween: 50,
     },

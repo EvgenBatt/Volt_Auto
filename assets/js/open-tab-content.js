@@ -8,10 +8,8 @@ buttonArray.forEach((button, index) => {
     button.addEventListener("click", () => {
       const textBlock = textBlockArray[index];
       if (textBlock.classList.contains("services-open-tab")) {
-        textBlock.style.display = "none";
         textBlock.classList.remove("services-open-tab");
       } else {
-        textBlock.style.display = "flex";
         textBlock.classList.add("services-open-tab");
       }
   });

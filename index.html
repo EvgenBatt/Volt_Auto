@@ -16,6 +16,7 @@
   </head>
   <body>
     <header>
+      <!-- Header Top Styles -->
       <div class="header-top">
         <div class="container-header-top">
           <div class="header-top-flex">
@@ -26,13 +27,15 @@
               </div>
             </a>
             <address class="header-address">
-              <div class="header-time-work">
-                <p>Пн-Пт:</p>
-                <p>10:00 - 19:00</p>
-              </div>
-              <div class="header-time-work">
-                <p>Пн-Пт:</p>
-                <p>10:00 - 19:00</p>
+              <div class="header-time-work-wrapper">
+                <div class="header-time-work">
+                  <p>Пн-Пт:</p>
+                  <p>10:00 - 19:00</p>
+                </div>
+                <div class="header-time-work">
+                  <p>Сб:</p>
+                  <p>10:00 - 16:00</p>
+                </div>
               </div>
               <div class="header-address-street">
                 <p>Київ, вул. Бориспільська, 26Д</p>
@@ -40,11 +43,11 @@
                   <use href="./assets/img/icons.svg#icon-menu-down"></use>
                 </svg>
               </div>
-              <a href="tel:+380689210878">+38068 921 0878</a>
+              <div class="header-address-tel"><a href="tel:+380689210878">+38068 921 0878</a></div>
             </address>
             <ul class="header-language-desktop">
-              <li><a href="#" class="current-language">UA</a></li>
-              <li><a href="#">RU</a></li>
+              <li class="header-language-desktop-item"><a href="#" class="current-language">UA</a></li>
+              <li class="header-language-desktop-item"><a href="#">RU</a></li>
             </ul>
             <div class="header-social">
               <a href="#">
@@ -61,6 +64,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Header Bottom Styles -->
       <div class="header-bottom">
         <div class="container">
           <div class="header-bottom-flex">
@@ -105,7 +110,7 @@
                 </div>
               </div>
             </address>
-            <a class="button-black" href="#">
+            <a class="button-black header-nav-menu-button-mobile" href="#">
               Запис на сервіс
               <svg width="12px" height="12px">
                 <use href="./assets/img/icons.svg#icon-arrow-down"></use>
@@ -118,15 +123,17 @@
 
     <!-- Section HERO -->
     <section class="hero">
-      <div class="hero-title">
-        <h1>сервіс електромобілів <span>сервіс майбутнього</span></h1>
+      <div class="hero-container">
+        <div class="hero-title">
+          <h1>сервіс електромобілів <span>сервіс майбутнього</span></h1>
+        </div>
+        <a class="button-black hero-button" href="#">
+          Запис на сервіс
+          <svg width="12px" height="12px">
+            <use href="./assets/img/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </a>
       </div>
-      <a class="button-black" href="#">
-        Запис на сервіс
-        <svg width="12px" height="12px">
-          <use href="./assets/img/icons.svg#icon-arrow-down"></use>
-        </svg>
-      </a>
     </section>
 
     <!-- Section ABOUT -->
@@ -155,8 +162,20 @@
       <div class="about-image-background">
         <div class="container">
           <div class="about-image-background-content">
-            <h3>Насолоджуйтесь кожним кілометром!</h3>
-            <p>про решту подбаємо ми...</p>
+            <div class="about-image-background-text">
+              <p>
+                Хвилюєтесь як обслуговувати авто з Китаю та де взяти запчастини до нього у випадку необхідності? Не
+                варто! Ви завжди можете звернутись до нашого сервісного центру де проведуть діагностику, виявлять
+                несправності та замовлять усі необхідні деталі. Окрім ремонтних робіт, компанія здійснює постачання та
+                реалізацію легкових та вантажних електромобілів, запасних частин, зарядних станцій. Клієнтам пропонуємо
+                гарантійне та післягарантійне обслуговування, надаємо технічну підтримку впродовж всього періоду
+                експлуатації автомобілю.
+              </p>
+            </div>
+            <div class="about-image-background-title">
+              <h3>Насолоджуйтесь кожним кілометром!</h3>
+              <p>про решту подбаємо ми...</p>
+            </div>
           </div>
 
           <ul class="about-icons-list">
@@ -177,18 +196,20 @@
             </li>
           </ul>
 
-          <a class="button-white" href="#">
-            Замовити дзвінок
-            <svg width="12px" height="12px">
-              <use href="./assets/img/icons.svg#icon-arrow-up"></use>
-            </svg>
-          </a>
-          <a class="button-black" href="#">
-            Запис на сервіс
-            <svg width="12px" height="12px">
-              <use href="./assets/img/icons.svg#icon-arrow-down"></use>
-            </svg>
-          </a>
+          <div class="about-image-background-button-wrapper">
+            <a class="button-white" href="#">
+              Замовити дзвінок
+              <svg width="12px" height="12px">
+                <use href="./assets/img/icons.svg#icon-arrow-up"></use>
+              </svg>
+            </a>
+            <a class="button-black" href="#">
+              Запис на сервіс
+              <svg width="12px" height="12px">
+                <use href="./assets/img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -229,91 +250,93 @@
 
     <!-- Section SERVICES -->
     <section class="services">
-      <!-- Block 1 -->
-      <div class="services-img-wrapper">
-        <img src="./assets/img/services1.jpg" alt="Обсобливості обслуговування" width="960" />
-        <div class="services-img-content">
-          <p>особливості обслуговування електромобілів</p>
-          <div class="services-img-button">
-            <svg width="4" height="7">
-              <use href="./assets/img/icons.svg#icon-arrow-right"></use>
-            </svg>
+      <div class="services-flex-wrapper">
+          <!-- Block 1 -->
+          <div class="services-img-wrapper">
+            <img src="./assets/img/services1.jpg" alt="Обсобливості обслуговування" width="960" />
+            <div class="services-img-content">
+              <p>особливості обслуговування електромобілів</p>
+              <div class="services-img-button">
+                <svg width="4" height="7">
+                  <use href="./assets/img/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="services-visible-content">
-        <h3>Діагностика та обслуговування</h3>
-        <p>
-          Ремонтні роботи при обслуговуванні електромобілів можуть відрізнятися залежно від конкретної моделі та
-          виробника, тому важливо вибирати СТО електромобілів, що спеціалізуються на обслуговуванні електрокарів.
-          Ефективний автосервіс електромобілів не можливий без діагностики. При цьому виконується перевірка та аналіз
-          працездатності електричної системи автомобіля з використанням спеціалізованого програмного забезпечення. Також
-          важливо регулярно проводити технічне обслуговування машини.
-        </p>
-      </div>
-      <!-- Block 2 -->
-      <div class="services-img-wrapper">
-        <img src="./assets/img/services2.jpg" alt="Ремонт кузова" width="960" />
-        <div class="services-img-content services-img-content2">
-          <div class="services-img-button services-img-button2">
-            <svg width="4" height="7">
-              <use href="./assets/img/icons.svg#icon-arrow-left"></use>
-            </svg>
+          <div class="services-visible-content">
+            <h3>Діагностика та обслуговування</h3>
+            <p>
+              Ремонтні роботи при обслуговуванні електромобілів можуть відрізнятися залежно від конкретної моделі та
+              виробника, тому важливо вибирати СТО електромобілів, що спеціалізуються на обслуговуванні електрокарів.
+              Ефективний автосервіс електромобілів не можливий без діагностики. При цьому виконується перевірка та аналіз
+              працездатності електричної системи автомобіля з використанням спеціалізованого програмного забезпечення. Також
+              важливо регулярно проводити технічне обслуговування машини.
+            </p>
           </div>
-          <p>Ремонт кузова та електронних систем</p>
-        </div>
-      </div>
-      <div class="services-visible-content">
-        <h3>Ремонт Електронних систем</h3>
-        <p>
-          Найчастіше ремонту потребують такі системи та компоненти: електричний двигун, електроніка та системи
-          управління. При експлуатації авто важливо стежити за станом двигуна та у разі появи несправностей звертатися
-          до фахівців. Несправності двигуна електромобіля можуть виявлятися наступним чином: ✔️зниження потужності
-          ✔️перегрів ✔️незвичайні звуки При своєчасному зверненні до сервісу усунути проблеми в роботі двигуна можна за
-          найменших витрат.
-        </p>
-      </div>
-      <!-- Block 3 -->
-      <div class="services-img-wrapper">
-        <img src="./assets/img/services3.jpg" alt="Кваліфікований персонал" width="960" />
-        <div class="services-img-content">
-          <p>Кваліфікований персонал та спеціалізоване обладнання</p>
-          <div class="services-img-button">
-            <svg width="4" height="7">
-              <use href="./assets/img/icons.svg#icon-arrow-right"></use>
-            </svg>
+          <!-- Block 2 -->
+          <div class="services-img-wrapper">
+            <img src="./assets/img/services2.jpg" alt="Ремонт кузова" width="960" />
+            <div class="services-img-content services-img-content2">
+              <div class="services-img-button services-img-button2">
+                <svg width="4" height="7">
+                  <use href="./assets/img/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </div>
+              <p>Ремонт кузова та електронних систем</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="services-visible-content">
-        <h3>Ремонт Електронних систем</h3>
-        <p>
-          Найчастіше ремонту потребують такі системи та компоненти: електричний двигун, електроніка та системи
-          управління. При експлуатації авто важливо стежити за станом двигуна та у разі появи несправностей звертатися
-          до фахівців. Несправності двигуна електромобіля можуть виявлятися наступним чином: ✔️зниження потужності
-          ✔️перегрів ✔️незвичайні звуки При своєчасному зверненні до сервісу усунути проблеми в роботі двигуна можна за
-          найменших витрат.
-        </p>
-      </div>
-      <!-- Block 4 -->
-      <div class="services-img-wrapper">
-        <img src="./assets/img/services4.jpg" alt="робота з мультимедійними системами" width="960" />
-        <div class="services-img-content services-img-content2">
-          <div class="services-img-button services-img-button2">
-            <svg width="4" height="7">
-              <use href="./assets/img/icons.svg#icon-arrow-left"></use>
-            </svg>
+          <div class="services-visible-content">
+            <h3>Ремонт Електронних систем</h3>
+            <p>
+              Найчастіше ремонту потребують такі системи та компоненти: електричний двигун, електроніка та системи
+              управління. При експлуатації авто важливо стежити за станом двигуна та у разі появи несправностей звертатися
+              до фахівців. Несправності двигуна електромобіля можуть виявлятися наступним чином: ✔️зниження потужності
+              ✔️перегрів ✔️незвичайні звуки При своєчасному зверненні до сервісу усунути проблеми в роботі двигуна можна за
+              найменших витрат.
+            </p>
           </div>
-          <p>робота з мультимедійними системами інтерфесом</p>
-        </div>
-      </div>
-      <div class="services-visible-content">
-        <h3>Переклад інтерфейсу</h3>
-        <p>
-          Запускаємо довгоочікувану послугу – переклад та локалізація вашого електрокара з китайської мови англійською.
-          Встановлення додаткових програм (YouTube, Google Maps…). Зверніться до нас і дізнайтеся деталі замовлення
-          послуги. Тепер ви зможете говорити з вашою машиною однією мовою.
-        </p>
+          <!-- Block 3 -->
+          <div class="services-img-wrapper">
+            <img src="./assets/img/services3.jpg" alt="Кваліфікований персонал" width="960" />
+            <div class="services-img-content">
+              <p>Кваліфікований персонал та спеціалізоване обладнання</p>
+              <div class="services-img-button">
+                <svg width="4" height="7">
+                  <use href="./assets/img/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="services-visible-content">
+            <h3>Ремонт Електронних систем</h3>
+            <p>
+              Найчастіше ремонту потребують такі системи та компоненти: електричний двигун, електроніка та системи
+              управління. При експлуатації авто важливо стежити за станом двигуна та у разі появи несправностей звертатися
+              до фахівців. Несправності двигуна електромобіля можуть виявлятися наступним чином: ✔️зниження потужності
+              ✔️перегрів ✔️незвичайні звуки При своєчасному зверненні до сервісу усунути проблеми в роботі двигуна можна за
+              найменших витрат.
+            </p>
+          </div>
+          <!-- Block 4 -->
+          <div class="services-img-wrapper">
+            <img src="./assets/img/services4.jpg" alt="робота з мультимедійними системами" width="960" />
+            <div class="services-img-content services-img-content2">
+              <div class="services-img-button services-img-button2">
+                <svg width="4" height="7">
+                  <use href="./assets/img/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </div>
+              <p>робота з мультимедійними системами інтерфесом</p>
+            </div>
+          </div>
+          <div class="services-visible-content">
+            <h3>Переклад інтерфейсу</h3>
+            <p>
+              Запускаємо довгоочікувану послугу – переклад та локалізація вашого електрокара з китайської мови англійською.
+              Встановлення додаткових програм (YouTube, Google Maps…). Зверніться до нас і дізнайтеся деталі замовлення
+              послуги. Тепер ви зможете говорити з вашою машиною однією мовою.
+            </p>
+          </div>
       </div>
     </section>
 
