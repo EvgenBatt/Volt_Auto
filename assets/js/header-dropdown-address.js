@@ -1,12 +1,16 @@
-function toggleDropdown() {
-    const content = document.querySelector('.dropdown-content');
-    const arrow = document.querySelector('.arrow');
+const dropdownTrigger = document.getElementById("dropdown-trigger");
+const dropdownContent = document.getElementById("dropdown-content");
+let isDropdownOpen = false;
 
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        arrow.classList.remove('rotated');
-    } else {
-        content.style.display = "block";
-        arrow.classList.add('rotated');
-    }
-}
+dropdownTrigger.addEventListener("click", (event) => {
+  event.stopPropagation();
+  isDropdownOpen = !isDropdownOpen;
+  dropdownContent.style.display = isDropdownOpen ? "block" : "none";
+});
+
+document.addEventListener("click", (event) => {
+  if (isDropdownOpen && event.target !== dropdownTrigger) {
+    dropdownContent.style.display = "none";
+    isDropdownOpen = false;
+  }
+});

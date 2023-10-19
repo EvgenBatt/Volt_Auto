@@ -1,6 +1,7 @@
 // Slider in index.html section Brands
 const brandSlider = new Swiper(".brands-slider", {
   direction: "horizontal",
+  slidesPerView: "auto",
   loop: true,
   cssMode: true,
   speed: 500,
@@ -31,7 +32,7 @@ const brandSlider = new Swiper(".brands-slider", {
     },
     1920: {
       slidesPerView: 7,
-      spaceBetween: 45,
+      spaceBetween: 60,
     },
   },
 });
@@ -40,8 +41,9 @@ const brandSlider = new Swiper(".brands-slider", {
 const gallerySlider = new Swiper(".gallery-slider", {
   direction: "horizontal",
   loop: true,
+  cssMode: true,
   speed: 500,
-  centeredSlides: true,
+
 
   navigation: {
     nextEl: ".gallery-slider-button-next",
@@ -64,12 +66,12 @@ const gallerySlider = new Swiper(".gallery-slider", {
       spaceBetween: 15,
     },
     1440: {
-      slidesPerView: 1,
-      spaceBetween: 45,
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
     1920: {
-      slidesPerView: 1,
-      spaceBetween: 50,
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
   },
 });
@@ -78,6 +80,7 @@ const gallerySlider = new Swiper(".gallery-slider", {
 const newsSlider = new Swiper(".news-slider", {
   direction: "horizontal",
   loop: true,
+  cssMode: true,
   speed: 500,
   centeredSlides: true,
 
@@ -102,12 +105,12 @@ const newsSlider = new Swiper(".news-slider", {
       spaceBetween: 15,
     },
     1440: {
-      slidesPerView: 1,
-      spaceBetween: 45,
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
     1920: {
-      slidesPerView: 1,
-      spaceBetween: 50,
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
   },
 });
